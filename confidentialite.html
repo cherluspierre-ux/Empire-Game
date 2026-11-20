@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Confidentialité · Empire Capital</title>
+<style>
+:root{--bg:#f7f6f2;--fg:#1b1d24;--mute:#5d6170;--line:#dedbd2;--acc:#8a6a1f;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1020;--fg:#eef1f8;--mute:#a8b0c4;--line:#232a40;--acc:#d4a84b;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px max(16px,env(safe-area-inset-right)) 64px max(16px,env(safe-area-inset-left))}
+h1{font-size:30px;line-height:1.2;margin:0 0 6px;text-wrap:balance}h2{font-size:19px;margin:34px 0 8px;text-wrap:balance}
+p,li{max-width:65ch}.mute{color:var(--mute)}table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{border-top:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}th{font-weight:600}
+.tw{overflow-x:auto}a{color:var(--acc)}.box{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+</style>
+</head>
+<body><main>
+<h1>Politique de confidentialité</h1>
+<p class="mute">Empire Capital, version web. À compléter par l’éditeur avant la mise en ligne : nom de l’éditeur, adresse de contact et pays d’hébergement (passages entre crochets).</p>
+
+<div class="box"><b>En bref.</b> Vous pouvez jouer sans compte : rien ne quitte alors votre appareil. Avec un compte, nous ne recevons que votre nom d’utilisateur, des sauvegardes <b>chiffrées sur votre appareil</b> que nous ne pouvons pas lire, et vos résultats au classement. Aucune publicité, aucun pisteur, aucune revente.</div>
+
+<h2>Responsable du traitement</h2>
+<p>[Nom de l’éditeur], joignable à [adresse de contact].</p>
+
+<h2>Données traitées</h2>
+<div class="tw"><table>
+<tr><th>Donnée</th><th>Pourquoi</th><th>Conservation</th></tr>
+<tr><td>Nom d’utilisateur</td><td>Vous identifier, l’afficher au classement</td><td>Jusqu’à la suppression du compte</td></tr>
+<tr><td>Empreinte de connexion</td><td>Vérifier votre identité. Votre mot de passe n’est jamais envoyé : le navigateur en dérive une preuve (600 000 tours de PBKDF2), que le serveur hache encore (scrypt).</td><td>Jusqu’à la suppression du compte</td></tr>
+<tr><td>Sauvegardes cloud</td><td>Retrouver vos parties sur un autre appareil. Chiffrées par votre navigateur (AES-256-GCM) avec une clé que le serveur n’a pas : illisibles pour nous.</td><td>Jusqu’à leur suppression ou celle du compte</td></tr>
+<tr><td>Résultats de partie (jour, fortune, nom de l’entreprise)</td><td>Classement mondial et contrôle anti-triche. Le nom de l’entreprise et la fortune sont publics au classement.</td><td>Jusqu’à la suppression du compte</td></tr>
+<tr><td>Cookie de session</td><td>Rester connecté. Cookie strictement nécessaire, sans pistage, inaccessible aux scripts.</td><td>30 jours au plus (7 jours d’inactivité)</td></tr>
+<tr><td>Journal de sécurité (événement, date, adresse IP rendue anonyme par un hachage à clé)</td><td>Détecter les tentatives d’intrusion et de triche</td><td>12 mois au plus</td></tr>
+</table></div>
+<p>Base légale : l’exécution du service que vous demandez (compte, cloud, classement) et notre intérêt légitime à sécuriser le service.</p>
+
+<h2>Ce que nous ne faisons pas</h2>
+<ul><li>Aucune publicité, aucun outil de mesure d’audience, aucun pisteur, aucun service tiers chargé par le jeu.</li>
+<li>Aucune vente ni cession de données.</li>
+<li>Aucun accès possible au contenu de vos sauvegardes cloud, même à la demande.</li></ul>
+
+<h2>Sécurité</h2>
+<p>Connexion chiffrée (HTTPS, HSTS), politique de sécurité du contenu stricte, protection contre la falsification de requêtes, limitation des tentatives de connexion, verrouillage progressif du compte, stockage des fichiers avec des droits restreints. Le serveur n’utilise aucune bibliothèque tierce.</p>
+<p><b>Important</b> : comme nous ne connaissons pas votre mot de passe, nous ne pouvons pas le réinitialiser. S’il est perdu, les sauvegardes cloud ne peuvent plus être lues.</p>
+
+<h2>Vos droits</h2>
+<p>Dans le jeu (Profil, puis En ligne) : <b>Voir mes données</b> (accès et portabilité) et <b>Supprimer mon compte</b> (effacement immédiat du compte, des sauvegardes cloud et des résultats). Pour toute autre demande (rectification, opposition, limitation) : [adresse de contact]. Vous pouvez aussi saisir l’autorité de protection des données de votre pays (en France, la CNIL).</p>
+
+<h2>Hébergement</h2>
+<p>Les données sont hébergées par [hébergeur], [pays]. Elles ne sont pas transférées ailleurs.</p>
+
+<h2>Mineurs</h2>
+<p>Le compte en ligne est réservé aux personnes de 15 ans et plus, ou avec l’accord d’un parent.</p>
+
+<p class="mute">Dernière mise à jour : novembre 2026.</p>
+</main></body></html>
